@@ -24,6 +24,8 @@ public class IHMCalculette extends JFrame {
     }
 
     public static void main(String[] args){
+        
+        
         new IHMCalculette();
-    }
+        }
 }

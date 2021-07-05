@@ -127,7 +127,7 @@ public class IHMCalculetteTest extends junit.framework.TestCase{
     }
 
    
-	
+    
     public void test_IHMCalculette_MauvaisFormatDuNombre() throws Exception{
         try{
             Container panel = f.getContentPane();
@@ -307,4 +307,7 @@ public class IHMCalculetteTest extends junit.framework.TestCase{
     }//end mouseMoveAndClickClick
 
   
+
+    
 }
+

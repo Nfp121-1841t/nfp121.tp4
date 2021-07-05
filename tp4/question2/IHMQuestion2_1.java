@@ -27,13 +27,25 @@ public class IHMQuestion2_1 extends JFrame {
         setLocation(100,100);
         pack();show();
 
-        // à compléter
         // le bouton A a 3 observateurs jbo1, jbo2 et jbo3
-
+        JButtonObserver boutonA1 = new JButtonObserver("jbo1", contenu);
+        JButtonObserver boutonA2 = new JButtonObserver("jbo2", contenu);
+        JButtonObserver boutonA3 = new JButtonObserver("jbo3", contenu);
+        
+        boutonA.addActionListener(boutonA1);
+        boutonA.addActionListener(boutonA2);
+        boutonA.addActionListener(boutonA3); 
+        
         // le bouton B a 2 observateurs jbo1 et jbo2
-
-        // le bouton C a 1 observateur jbo1
-
+        JButtonObserver boutonB1 = new JButtonObserver("jbo1", contenu);
+        JButtonObserver boutonB2 = new JButtonObserver("jbo2", contenu);
+        boutonB.addActionListener(boutonB1);
+        boutonB.addActionListener(boutonB2);
+        
+         // le bouton C a 1 observateur jbo1
+        JButtonObserver boutonC1 = new JButtonObserver("jbo1", contenu);
+        boutonC.addActionListener(boutonC1);
+        
       
     }
     

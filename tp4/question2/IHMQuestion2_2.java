@@ -29,16 +29,34 @@ public class IHMQuestion2_2 extends JFrame {
 
         // à compléter à l'identique de la question 2_1, (du copier/coller)...
         // le bouton A a 3 observateurs jbo1, jbo2 et jbo3
-
+        JButtonObserver boutonA1 = new JButtonObserver("jbo1", contenu);
+        JButtonObserver boutonA2 = new JButtonObserver("jbo2", contenu);
+        JButtonObserver boutonA3 = new JButtonObserver("jbo3", contenu);
+        
+        boutonA.addActionListener(boutonA1);
+        boutonA.addActionListener(boutonA2);
+        boutonA.addActionListener(boutonA3); 
+        
         // le bouton B a 2 observateurs jbo1 et jbo2
-
-        // le bouton C a 1 observateur jbo1
-
+        JButtonObserver boutonB1 = new JButtonObserver("jbo1", contenu);
+        JButtonObserver boutonB2 = new JButtonObserver("jbo2", contenu);
+        boutonB.addActionListener(boutonB1);
+        boutonB.addActionListener(boutonB2);
+        
+         // le bouton C a 1 observateur jbo1
+        JButtonObserver boutonC1 = new JButtonObserver("jbo1", contenu);
+        boutonC.addActionListener(boutonC1);
+        
         // à compléter pour la question 2_2 (JMouseObserver)
             // le bouton A a 1 observateur jmo1
+            JMouseObserver MouseA1 = new JMouseObserver("jmo1", contenu);
+            boutonA.addMouseListener(MouseA1);
             // le bouton B a 1 observateur jmo2
+            JMouseObserver MouseB2 = new JMouseObserver("jmo2", contenu);
+            boutonB.addMouseListener(MouseB2);
             // le bouton C a 1 observateur jmo3
-        
+            JMouseObserver MouseC1 = new JMouseObserver("jmo3", contenu);        
+            boutonB.addMouseListener(MouseC1);
     }
     
      public static void main(String[] args){
